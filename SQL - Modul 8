@@ -1,0 +1,19 @@
+CREATE TABLE Transactions (
+
+Transaction_Id INT (10) AUTO_INCREMENT,
+User_Id;
+Transaction_Type ('INCOMING', 'OUTGOING');
+Transaction_Date
+Amount;
+Fee;
+recipient_client_id INT,                                  
+recipient_iban VARCHAR(),                              
+recipient_bic VARCHAR(),                              
+recipient_first_name VARCHAR(),                    
+recipient_last_name VARCHAR(),        
+user_balance_before DECIMAL(, ) ,              
+user_balance_after DECIMAL(, ) ,             
+transfer_purpose TEXT,
+
+PRIMARY KEY (id)
+);
