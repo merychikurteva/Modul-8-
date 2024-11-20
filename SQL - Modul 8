@@ -15,5 +15,5 @@ user_balance_before DECIMAL(10,2) ,
 user_balance_after DECIMAL(10,2) ,             
 transfer_purpose TEXT,
 
-PRIMARY KEY (transaction_Id)
+PRIMARY KEY (TransactionId)
 );
