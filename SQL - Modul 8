@@ -1,13 +1,13 @@
 CREATE TABLE Transactions (
 
-Transaction_Id INT (10) AUTO_INCREMENT,
-User_Id;
-Transaction_Type ('INCOMING', 'OUTGOING');
-Transaction_Date
-Amount;
-Fee;
-recipient_client_id INT,                                  
-recipient_iban VARCHAR(),                              
+transaction_Id INT (10) AUTO_INCREMENT,
+user_Id;
+uransaction_Type ('INCOMING', 'OUTGOING');
+transaction_Date
+transaction_Amount;
+transaction_Fee;
+recipient_client_Id INT,                                  
+recipient_Iban VARCHAR(),                              
 recipient_bic VARCHAR(),                              
 recipient_first_name VARCHAR(),                    
 recipient_last_name VARCHAR(),        
