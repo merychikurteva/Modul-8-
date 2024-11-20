@@ -1,18 +1,18 @@
 CREATE TABLE Transactions (
 
 TransactionId INT (10) AUTO_INCREMENT,
-UserId INT(10);
+UserId INT(10) NOT NULL;
 TransactionType VARCHAR(20)('INCOMING', 'OUTGOING');
 TransactionDate DATE;
-TransactionAmount DECIMAL (10,2);
-TransactionFee DECIMAL (10,2); 
-recipient_client_Id INT (10),                                  
-recipient_Iban VARCHAR(34),                              
+TransactionAmount DECIMAL (10,2) NOT NULL;
+TransactionFee DECIMAL (10,2) NOT NULL; 
+recipient_client_Id INT (10) NOT NULL,                                  
+recipient_Iban VARCHAR(34) ,                              
 recipient_bic VARCHAR(11),                              
 recipient_first_name VARCHAR(30),                    
 recipient_last_name VARCHAR(30),        
-user_balance_before DECIMAL(10,2) ,              
-user_balance_after DECIMAL(10,2) ,             
+user_balance_before DECIMAL(10,2) NOT NULL ,              
+user_balance_after DECIMAL(10,2) NOT NULL ,             
 transfer_purpose TEXT,
 
 PRIMARY KEY (TransactionId)
